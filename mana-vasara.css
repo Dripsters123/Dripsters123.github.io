@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px 0;
+
+  text-align: center;
+}
+.laiva {
+  width: 400px;
+  left: 50%;
+  bottom: 100px;
+  transform: translate(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.laiva img {
+  width: 100%;
+  animation: laiva 1s linear infinite;
+}
+@keyframes laiva {
+  100% {
+    transform: translateY(-1px);
+  }
+}
+li {
+  color: white;
+  font-size: 23px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  background-image: url("https://wallpaperset.com/w/full/5/5/8/500028.jpg");
+}
